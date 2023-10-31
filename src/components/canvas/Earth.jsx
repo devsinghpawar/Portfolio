@@ -1,13 +1,14 @@
-import { Suspense } from "react";
+import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
 const Earth = () => {
-  const eart = useGLTF("./planet/scene.gltf");
+  const earth = useGLTF("./planet/scene.gltf");
+
   return (
-    <primitive object={eart.scene} scale={2.5} positon-y={0} rotation-y={0} />
+    <primitive object={earth.scene} scale={2.5} position-y={0} rotation-y={0} />
   );
 };
 
@@ -16,6 +17,7 @@ const EarthCanvas = () => {
     <Canvas
       shadows
       frameloop="demand"
+      dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}
       camera={{
         fov: 45,
@@ -32,6 +34,8 @@ const EarthCanvas = () => {
           minPolarAngle={Math.PI / 2}
         />
         <Earth />
+
+        <Preload all />
       </Suspense>
     </Canvas>
   );
