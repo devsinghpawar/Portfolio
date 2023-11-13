@@ -11,20 +11,7 @@ import {
   reactjs,
   redux,
   tailwind,
-  nodejs,
-  mongodb,
   wildOasis,
-  git,
-  figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
   libraries,
   react,
   gcloth,
@@ -95,30 +82,6 @@ const technologies = [
     name: "Tailwind CSS",
     icon: tailwind,
   },
-  // {
-  //   name: "Node JS",
-  //   icon: nodejs,
-  // },
-  // {
-  //   name: "MongoDB",
-  //   icon: mongodb,
-  // },
-  // {
-  //   name: "Three JS",
-  //   icon: threejs,
-  // },
-  // {
-  //   name: "git",
-  //   icon: git,
-  // },
-  // {
-  //   name: "figma",
-  //   icon: figma,
-  // },
-  // {
-  //   name: "docker",
-  //   icon: docker,
-  // },
 ];
 
 const experiences = [
@@ -127,7 +90,7 @@ const experiences = [
     company_name: "Basics",
     icon: react,
     iconBg: "#383E56",
-    // date: "March 2020 - April 2021",
+    // date: "",
     points: [
       "React Router: Proficiently implementing React Router for seamless navigation within web applications.",
       "Higher-Order Components (HOCs): Leveraging Higher-Order Components for code reuse and logic sharing among components.",
@@ -137,10 +100,10 @@ const experiences = [
   },
   {
     title: "State Managment",
-    // company_name: "Tesla",
+
     icon: stateManagement,
     iconBg: "#E6DEDD",
-    // date: "Jan 2021 - Feb 2022",
+    // date: "",
     points: [
       "Redux Mastery: Demonstrating expertise in Redux for centralized state management, ensuring predictability and scalability in complex applications.",
       "Context API Proficiency: Creating a global state container, enabling efficient data sharing across components.",
@@ -149,10 +112,10 @@ const experiences = [
   },
   {
     title: "UI Libraries",
-    // company_name: "Shopify",
+
     icon: libraries,
     iconBg: "#383E56",
-    // date: "Jan 2022 - Jan 2023",
+    // date: "",
     points: [
       "Material Design Proficiency: Using MUI to create visually appealing, consistent, and user-friendly interfaces.",
       "Tailwind CSS: Utilizing Tailwind CSS to rapidly develop responsive and highly customizable user interfaces, with a focus on utility classes for efficiency.",
@@ -161,10 +124,10 @@ const experiences = [
   },
   {
     title: "Version control and tools",
-    // company_name: "Meta",
+
     icon: versionControl,
     iconBg: "#E6DEDD",
-    // date: "Jan 2023 - Present",
+    // date: "",
     points: [
       "NPM: Proficiency in managing project dependencies, ensuring efficient package management and code reuse.",
       "Git & GitHub: Mastery of Git for version control and GitHub for collaborative development, including pull requests, issues, and best practices for team collaboration.",
@@ -220,6 +183,7 @@ const projects = [
     ],
     image: gcloth,
     source_code_link: "https://github.com/",
+    project_link: "/",
   },
   {
     name: "Wild oasis",
@@ -241,6 +205,7 @@ const projects = [
     ],
     image: wildOasis,
     source_code_link: "https://github.com/devsinghpawar/WILD-OASIS",
+    project_link: "https://hotel-wild-oasis-world.netlify.app",
   },
   {
     name: "Codev",
@@ -262,6 +227,7 @@ const projects = [
     ],
     image: codev,
     source_code_link: "https://github.com/devsinghpawar/Codev",
+    project_link: "https://codevpen.netlify.app",
   },
 ];
 
