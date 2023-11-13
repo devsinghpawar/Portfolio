@@ -7,11 +7,13 @@ import {
   typescript,
   html,
   css,
+  codev,
   reactjs,
   redux,
   tailwind,
   nodejs,
   mongodb,
+  wildOasis,
   git,
   figma,
   docker,
@@ -23,6 +25,11 @@ import {
   jobit,
   tripguide,
   threejs,
+  libraries,
+  react,
+  gcloth,
+  versionControl,
+  stateManagement,
 } from "../assets";
 
 export const navLinks = [
@@ -42,19 +49,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Front-end",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "State Mangement",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "UI Libraries",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Version control",
     icon: creator,
   },
 ];
@@ -88,83 +95,79 @@ const technologies = [
     name: "Tailwind CSS",
     icon: tailwind,
   },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
+  // {
+  //   name: "Node JS",
+  //   icon: nodejs,
+  // },
+  // {
+  //   name: "MongoDB",
+  //   icon: mongodb,
+  // },
+  // {
+  //   name: "Three JS",
+  //   icon: threejs,
+  // },
+  // {
+  //   name: "git",
+  //   icon: git,
+  // },
+  // {
+  //   name: "figma",
+  //   icon: figma,
+  // },
+  // {
+  //   name: "docker",
+  //   icon: docker,
+  // },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "React.js",
+    company_name: "Basics",
+    icon: react,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    // date: "March 2020 - April 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "React Router: Proficiently implementing React Router for seamless navigation within web applications.",
+      "Higher-Order Components (HOCs): Leveraging Higher-Order Components for code reuse and logic sharing among components.",
+      "React DevTools: Effectively using React DevTools for debugging, profiling, and gaining insights into application performance",
+      "Basic Features: Hooks, Props, Virtual DOM, JSX, etc.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "State Managment",
+    // company_name: "Tesla",
+    icon: stateManagement,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    // date: "Jan 2021 - Feb 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Redux Mastery: Demonstrating expertise in Redux for centralized state management, ensuring predictability and scalability in complex applications.",
+      "Context API Proficiency: Creating a global state container, enabling efficient data sharing across components.",
+      "React Query Proficiency: Managing asynchronous data and caching, which enhances data fetching and management within React applications.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "UI Libraries",
+    // company_name: "Shopify",
+    icon: libraries,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    // date: "Jan 2022 - Jan 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Material Design Proficiency: Using MUI to create visually appealing, consistent, and user-friendly interfaces.",
+      "Tailwind CSS: Utilizing Tailwind CSS to rapidly develop responsive and highly customizable user interfaces, with a focus on utility classes for efficiency.",
+      "Styled-Components: For dynamic styling and theming, promoting a component-driven approach to CSS-in-JS for better maintainability",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: "Version control and tools",
+    // company_name: "Meta",
+    icon: versionControl,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    // date: "Jan 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "NPM: Proficiency in managing project dependencies, ensuring efficient package management and code reuse.",
+      "Git & GitHub: Mastery of Git for version control and GitHub for collaborative development, including pull requests, issues, and best practices for team collaboration.",
     ],
   },
 ];
@@ -198,30 +201,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Gcloth",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Hyper-Local e-commerce platform that allows nearby vendors to create their online presence and sell directly to local customers, we also manage deliveries ",
     tags: [
       {
         name: "react",
@@ -232,20 +214,20 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "redux-toolkit",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: gcloth,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    name: "Wild oasis",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A property management system for efficiently managing various aspects of Hotels, such as bookings, cabin managment, and financial operations.",
     tags: [
       {
-        name: "nextjs",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
@@ -257,8 +239,29 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: wildOasis,
+    source_code_link: "https://github.com/devsinghpawar/WILD-OASIS",
+  },
+  {
+    name: "Codev",
+    description:
+      "Codev is a web-based online code editor that allows users to create HTML, CSS, and JavaScript code with live previews with instant updates.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mui",
+        color: "green-text-gradient",
+      },
+      {
+        name: "context-api",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: codev,
+    source_code_link: "https://github.com/devsinghpawar/Codev",
   },
 ];
 

@@ -104,12 +104,12 @@ const Contact = () => {
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your Message</span>
             <textarea
-              rows="7"
+              rows={7}
               name="message"
               value={form.message}
               onChange={handleChange}
               placeholder="What do you want to say? "
-              className="placeholder:text-secondary bg-tertiary py-4 px-6 text-white rounded-lg outline-none border-none font-medium"
+              className="placeholder:text-secondary  resize-none bg-tertiary py-4 px-6 text-white rounded-lg outline-none border-none font-medium "
             />
           </label>
           <button

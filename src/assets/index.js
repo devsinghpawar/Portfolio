@@ -20,23 +20,33 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
-
+import wildOasis from "./askn.png";
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.png";
+import libraries from "./libraries.png";
+import stateManagement from "./stateManagement.png";
+import versionControl from "./versionControl.jpg";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import codev from "./indore.png";
+import react from "./react.png";
+import gcloth from "./Gcloth.png";
 
 export {
   logo,
   backend,
   creator,
+  gcloth,
+  codev,
+  react,
   mobile,
   web,
   github,
+  wildOasis,
   menu,
   close,
   css,
@@ -59,4 +69,7 @@ export {
   carrent,
   jobit,
   tripguide,
+  libraries,
+  stateManagement,
+  versionControl,
 };
