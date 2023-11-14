@@ -2,12 +2,13 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+        className={`absolute inset-0 top-[100px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#915EFF]" />
@@ -18,10 +19,18 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className="text-[#915EFF]">Dev Singh</span>
           </h1>
+
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             I develop front end website,user <br className="sm:block hidden" />
             interfaces and web applications
           </p>
+
+          <Link
+            to="/"
+            className="bg-[#915EFF] hover:bg-[#7749da]  text-white font-bold py-2 px-4 rounded flex flex-col justify-center items-center w-40 "
+          >
+            RESUME
+          </Link>
         </div>
       </div>
 

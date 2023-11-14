@@ -18,6 +18,16 @@ const ProjectCard = ({
   source_code_link,
   project_link,
 }) => {
+  const openProjectLink = (e) => {
+    window.open(project_link, "_blank");
+    e.stopPropagation();
+  };
+
+  const openSourceCodeLink = (e) => {
+    window.open(source_code_link, "_blank");
+    e.stopPropagation();
+  };
+
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
@@ -30,7 +40,7 @@ const ProjectCard = ({
       >
         <div
           className="relative w-full h-[230px] cursor-pointer"
-          onClick={() => window.open(project_link, "_blank")}
+          onClick={openProjectLink}
         >
           <img
             src={image}
@@ -40,7 +50,7 @@ const ProjectCard = ({
 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div
-              onClick={() => window.open(source_code_link, "_blank")}
+              onClick={openSourceCodeLink}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
               <img

@@ -1,3 +1,4 @@
+import toast from "react-hot-toast";
 import {
   mobile,
   backend,
@@ -182,7 +183,10 @@ const projects = [
       },
     ],
     image: gcloth,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/devsinghpawar",
+    // source_code_link: window.alert(
+    //   "It's a private , lets met and talk about it in the interview"
+    // ),
     project_link: "/",
   },
   {
@@ -205,7 +209,7 @@ const projects = [
     ],
     image: wildOasis,
     source_code_link: "https://github.com/devsinghpawar/WILD-OASIS",
-    project_link: "https://hotel-wild-oasis-world.netlify.app",
+    project_link: "https://wild-oasis-hotel-world.netlify.app",
   },
   {
     name: "Codev",
