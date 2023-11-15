@@ -26,7 +26,7 @@ const Hero = () => {
           </p>
 
           <Link
-            to="https://priyanshusingh18.github.io/Resume"
+            to="https://github.com/devsinghpawar/Resume/blob/main/Dev's%20Resume.pdf"
             className="bg-[#915EFF] absolute z-30 hover:bg-[#7749da]  text-white font-bold py-2 px-4 rounded flex flex-col justify-center items-center w-40 "
           >
             RESUME
