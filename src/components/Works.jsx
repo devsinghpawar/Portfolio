@@ -1,7 +1,7 @@
 import React from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
-
+import toast from "react-hot-toast";
 import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
@@ -27,7 +27,10 @@ const ProjectCard = ({
     e.stopPropagation();
     if (source_code_link) {
       window.open(source_code_link, "_blank");
-    } else return alert("Private repo, discuss in interview");
+    } else {
+      toast.error("Let's discuss in interview");
+    }
+    // alert("Private repo, discuss in interview");
   };
 
   return (
