@@ -15,7 +15,7 @@ const Hero = () => {
           <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>
 
-        <div>
+        <div className="">
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className="text-[#915EFF]">Dev Singh</span>
           </h1>
@@ -26,8 +26,8 @@ const Hero = () => {
           </p>
 
           <Link
-            to="/"
-            className="bg-[#915EFF] hover:bg-[#7749da]  text-white font-bold py-2 px-4 rounded flex flex-col justify-center items-center w-40 "
+            to="https://priyanshusingh18.github.io/Resume"
+            className="bg-[#915EFF] absolute z-30 hover:bg-[#7749da]  text-white font-bold py-2 px-4 rounded flex flex-col justify-center items-center w-40 "
           >
             RESUME
           </Link>

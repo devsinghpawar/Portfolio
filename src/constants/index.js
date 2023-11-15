@@ -183,11 +183,11 @@ const projects = [
       },
     ],
     image: gcloth,
-    source_code_link: "https://github.com/devsinghpawar",
+    source_code_link: "",
     // source_code_link: window.alert(
     //   "It's a private , lets met and talk about it in the interview"
     // ),
-    project_link: "/",
+    project_link: "http://prince.fyi",
   },
   {
     name: "Wild oasis",

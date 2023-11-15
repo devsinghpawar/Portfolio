@@ -24,8 +24,10 @@ const ProjectCard = ({
   };
 
   const openSourceCodeLink = (e) => {
-    window.open(source_code_link, "_blank");
     e.stopPropagation();
+    if (source_code_link) {
+      window.open(source_code_link, "_blank");
+    } else return alert("Private repo, discuss in interview");
   };
 
   return (
