@@ -1,17 +1,28 @@
 import { BrowserRouter } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
+import { lazy } from "react";
 
-import {
-  About,
-  Contact,
-  Experience,
-  Feedbacks,
-  Hero,
-  Navbar,
-  Tech,
-  Works,
-  StarsCanvas,
-} from "./components";
+// import {
+//   About,
+//   Contact,
+//   Experience,
+//   Feedbacks,
+//   Hero,
+//   Navbar,
+//   Tech,
+//   Works,
+//   StarsCanvas,
+// } from "./components";
+
+const Hero = lazy(() => import("./components/Hero"));
+const Navbar = lazy(() => import("./components/Navbar"));
+const About = lazy(() => import("./components/About"));
+const Tech = lazy(() => import("./components/Tech"));
+const Experience = lazy(() => import("./components/Experience"));
+const Works = lazy(() => import("./components/Works"));
+const Contact = lazy(() => import("./components/Contact"));
+// import { StarsCanvas } from "./components";
+const StarsCanvas = lazy(() => import("./components/canvas/Stars"));
 
 const App = () => {
   return (
