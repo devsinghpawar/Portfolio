@@ -186,7 +186,7 @@ const projects = [
     // source_code_link: window.alert(
     //   "It's a private , lets met and talk about it in the interview"
     // ),
-    project_link: "http://prince.fyi",
+    project_link: "http://3.111.246.202/",
   },
   {
     name: "Wild oasis",
